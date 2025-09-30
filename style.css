@@ -1,0 +1,192 @@
+/* =====================
+   Global Styles
+===================== */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f0f6ff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* =====================
+   Resume Page Styles
+===================== */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #1a73e8;
+  text-shadow: 2px 2px #dbe9ff;
+}
+
+.header h3 {
+  margin-top: 8px;
+  font-weight: normal;
+  color: #555;
+}
+
+.header p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1a73e8;
+  border-bottom: 3px dashed #a6c8ff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #e3f2fd;
+  color: #1a73e8;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+  background: #bbdefb;
+}
+
+/* Education & Experience */
+.edu-item, .exp-item {
+  background: #f9fbff;
+  border-left: 5px solid #1a73e8;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+}
+
+.edu-item h3, .exp-item h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.edu-item span, .exp-item span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Logout Button */
+.logout {
+  display: block;
+  margin: 30px auto 0;
+  width: fit-content;
+  background: #1a73e8;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.logout:hover {
+  background: #0c47a1;
+}
+
+/* =====================
+   Login Page Styles
+===================== */
+.login-container {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #1a73e8;
+  text-shadow: 1px 1px #dbe9ff;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border: 1px solid #1a73e8;
+  box-shadow: 0 0 6px #bbdefb;
+  outline: none;
+}
+
+.login-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #0c47a1;
+  transform: scale(1.05);
+}
+
+/* Error & Success Messages */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
