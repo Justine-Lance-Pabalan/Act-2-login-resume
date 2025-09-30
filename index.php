@@ -33,8 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($result && pg_num_rows($result) > 0) {
             $_SESSION["username"] = $username;
-            header("Location: resume.php");
-            exit();
+            // Show success message first
+            $message = "<p class='success'>Login Successful! Redirecting...</p>";
+            // Redirect after 2 seconds
+            header("refresh:2; url=resume.php");
         } else {
             $message = "<p class='error'>Invalid Username or Password</p>";
         }
@@ -59,8 +61,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label>Password:</label>
         <input type="password" name="password" placeholder="Enter password">
 
-        <button type="submit">Login</button>
+        <button type="submit" class="login-btn">Login</button>
     </form>
 </div>
 </body>
 </html>
+
+
